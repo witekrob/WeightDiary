@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="#" method="post" th:action="@{/save}" th:object="${Weight}">
+<p>Firstname : <input type="text" name="firstname"></p>
+<p> Surname : <input type="text" name="surname"></p>
+<p> Weight : <input type="number" name="weight"></p>
+<p> Send : <input type = "submit"></p></form>
+
+
+<a th:href ="@{/show}"> Pokaz zapisy</a>	
+</body>
+</html>
